@@ -20,11 +20,18 @@ PY
 index=0
 while IFS= read -r device; do
   index=$((index + 1))
-  xcodebuild test -project ios/LocalDemo.xcodeproj -scheme LocalDemo \
+  xcodebuild build-for-testing -project ios/LocalDemo.xcodeproj -scheme LocalDemo \
+    -configuration Debug -destination "platform=iOS Simulator,id=$device" \
+    -derivedDataPath build/simulator ONLY_ACTIVE_ARCH=YES \
+    CODE_SIGNING_ALLOWED=YES CODE_SIGNING_REQUIRED=YES CODE_SIGN_IDENTITY=- \
+    | tee "build/simulator-build-$index.log"
+  plutil -p build/simulator/Build/Products/Debug-iphonesimulator/LocalDemo.app/Info.plist
+  xcodebuild test-without-building -project ios/LocalDemo.xcodeproj -scheme LocalDemo \
     -configuration Debug -destination "platform=iOS Simulator,id=$device" \
     -derivedDataPath build/simulator -resultBundlePath "build/iPhone16-$index.xcresult" \
-    -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
-    CODE_SIGN_IDENTITY='' | tee "build/simulator-$index.log"
+    -parallel-testing-enabled NO ONLY_ACTIVE_ARCH=YES \
+    CODE_SIGNING_ALLOWED=YES CODE_SIGNING_REQUIRED=YES CODE_SIGN_IDENTITY=- \
+    | tee "build/simulator-$index.log"
   xcrun xcresulttool export attachments --path "build/iPhone16-$index.xcresult" \
     --output-path "build/screenshots/iPhone16-$index"
 done < build/test-devices.txt
