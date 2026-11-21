@@ -68,7 +68,7 @@
 		0189424A5A60FED329FA868E = {
 			isa = PBXFileReference;
 			lastKnownFileType = folder;
-			path = Resources;
+			path = DemoResources;
 			sourceTree = "<group>";
 		};
 		AE7368CAB1CA7CA754B38D49 = {

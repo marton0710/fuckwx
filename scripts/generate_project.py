@@ -52,7 +52,7 @@ def source_group(folder):
 def generate():
     app_refs, app_builds = source_group("LocalDemo")
     test_refs, test_builds = source_group("LocalDemoUITests")
-    resources = obj("resources", "PBXFileReference", lastKnownFileType="folder", path="Resources", sourceTree="<group>")
+    resources = obj("resources", "PBXFileReference", lastKnownFileType="folder", path="DemoResources", sourceTree="<group>")
     icons = obj("icons", "PBXFileReference", lastKnownFileType="folder.assetcatalog", path="Assets.xcassets", sourceTree="<group>")
     info = obj("info", "PBXFileReference", lastKnownFileType="text.plist.xml", path="Info.plist", sourceTree="<group>")
     app = obj("product", "PBXFileReference", explicitFileType="wrapper.application", path="LocalDemo.app", sourceTree="BUILT_PRODUCTS_DIR", includeInIndex=0)

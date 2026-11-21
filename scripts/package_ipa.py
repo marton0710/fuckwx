@@ -11,7 +11,7 @@ info = plistlib.loads((app / "Info.plist").read_bytes())
 assert info["CFBundleSupportedPlatforms"] == ["iPhoneOS"], "Cannot package a simulator build"
 assert info["MinimumOSVersion"] == "18.0", info["MinimumOSVersion"]
 assert (app / info["CFBundleExecutable"]).is_file(), "Missing executable"
-assert (app / "Resources/catalog.json").is_file(), "Missing app resources"
+assert (app / "DemoResources/catalog.json").is_file(), "Missing app resources"
 assert not (app / "embedded.mobileprovision").exists(), "Expected an unsigned build"
 destination = root / "dist/LocalDemo-unsigned.ipa"
 destination.parent.mkdir(exist_ok=True)

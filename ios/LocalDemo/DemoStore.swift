@@ -96,7 +96,7 @@ final class DemoStore: ObservableObject {
         }
         values = initial
         do {
-            guard let url = Bundle.main.url(forResource: "catalog", withExtension: "json", subdirectory: "Resources")
+            guard let url = Bundle.main.url(forResource: "catalog", withExtension: "json", subdirectory: "DemoResources")
                     ?? Bundle.main.url(forResource: "catalog", withExtension: "json") else {
                 throw CocoaError(.fileNoSuchFile)
             }
@@ -175,7 +175,7 @@ final class DemoStore: ObservableObject {
     func asset(_ key: String) -> UIImage? {
         if let image = images[key] { return image }
         guard let path = catalog.assets[key], let root = Bundle.main.resourceURL else { return nil }
-        for candidate in [root.appendingPathComponent("Resources").appendingPathComponent(path), root.appendingPathComponent(path)] {
+        for candidate in [root.appendingPathComponent("DemoResources").appendingPathComponent(path), root.appendingPathComponent(path)] {
             if let image = UIImage(contentsOfFile: candidate.path) {
                 images[key] = image
                 return image
