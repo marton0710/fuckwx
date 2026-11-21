@@ -28,8 +28,6 @@ jobs:
           python3 scripts/generate_project.py
           python3 scripts/validate_project.py
           plutil -lint ios/LocalDemo.xcodeproj/project.pbxproj ios/LocalDemo/Info.plist
-      - name: Test iPhone 16 and iPhone 16 Pro Max
-        run: bash scripts/test_ios.sh
       - name: Build unsigned device IPA
         run: bash scripts/build_ipa.sh
       - name: Upload unsigned IPA
@@ -41,7 +39,25 @@ jobs:
             dist/SHA256SUMS.txt
           if-no-files-found: error
           retention-days: 30
-      - name: Upload test results and build logs
+      - name: Upload device build logs
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: iOS-device-build-logs
+          path: build/device-build.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  ui-tests:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+      - name: Test iPhone 16 and iPhone 16 Pro Max
+        run: bash scripts/test_ios.sh
+      - name: Upload test results and screenshots
         if: always()
         uses: actions/upload-artifact@v6
         with:

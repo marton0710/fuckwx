@@ -14,8 +14,8 @@
 ## 在 Windows 上取得 IPA
 
 代码推送至 `main` 或手动运行 **Actions → Build iOS unsigned IPA → Run workflow**。
-流程使用 GitHub 的 macOS runner 和 Xcode 16.4，先在两个 iPhone 16 系列模拟器运行 UI 测试，
-再构建真机 arm64 应用，打包并验证 `Payload/LocalDemo.app`。
+流程使用 GitHub 的 macOS runner 和 Xcode 16.4，并行执行真机 arm64 构建和模拟器 UI 测试。
+打包流程会验证 `Payload/LocalDemo.app`；测试依次运行两个 iPhone 16 系列机型。
 
 构建成功后，在该次运行的 Artifacts 下载 **LocalDemo-iOS18-unsigned**：
 
