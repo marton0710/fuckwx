@@ -105,13 +105,19 @@ struct MessagesView: View {
         }.background(.white)
     }
 
+    @ViewBuilder
     private func messageIcon(_ item: MessageItem) -> some View {
-        ZStack(alignment: .topTrailing) {
-            AssetIcon(key: "msg-\(item.title)", symbol: item.symbol, size: 39)
-                .foregroundStyle(.white).padding(6).background(item.color, in: RoundedRectangle(cornerRadius: 8))
-            if !item.badge.isEmpty {
-                Text(item.badge).font(.system(size: 11)).foregroundStyle(.white)
-                    .padding(.horizontal, 5).padding(.vertical, 2).background(.red, in: Capsule()).offset(x: 6, y: -6)
+        if let image = store.asset("msg-\(item.title)") {
+            // The source bitmap already includes its notification indicator.
+            Image(uiImage: image).resizable().scaledToFit().frame(width: 51, height: 51)
+        } else {
+            ZStack(alignment: .topTrailing) {
+                AssetIcon(key: "msg-\(item.title)", symbol: item.symbol, size: 39)
+                    .foregroundStyle(.white).padding(6).background(item.color, in: RoundedRectangle(cornerRadius: 8))
+                if !item.badge.isEmpty {
+                    Text(item.badge).font(.system(size: 11)).foregroundStyle(.white)
+                        .padding(.horizontal, 5).padding(.vertical, 2).background(.red, in: Capsule()).offset(x: 6, y: -6)
+                }
             }
         }
     }
@@ -250,7 +256,13 @@ struct WorkView: View {
                         if search.trimmed.isEmpty || item.title.contains(search.trimmed) {
                             NavigationLink(value: DemoRoute.web(item.title)) {
                                 VStack(spacing: 8) {
-                                    AssetIcon(key: item.asset, symbol: "app.fill", size: 44).foregroundStyle(.blue)
+                                    if item.asset == "work-日程" {
+                                        Image(systemName: "calendar").font(.system(size: 28))
+                                            .foregroundStyle(.white).frame(width: 44, height: 44)
+                                            .background(.yellow, in: RoundedRectangle(cornerRadius: 7))
+                                    } else {
+                                        AssetIcon(key: item.asset, symbol: "square.grid.2x2", size: 44).foregroundStyle(.blue)
+                                    }
                                     Text(item.title).font(.system(size: 12)).multilineTextAlignment(.center)
                                         .frame(maxWidth: .infinity).fixedSize(horizontal: false, vertical: true)
                                 }.frame(minHeight: 77, alignment: .top).contentShape(Rectangle())
