@@ -1,0 +1,490 @@
+{
+  "workSections": [
+    {
+      "title": "常用",
+      "items": [
+        {
+          "title": "学习服务平台",
+          "asset": "work-学生查成绩学工版"
+        }
+      ]
+    },
+    {
+      "title": "专属推荐",
+      "items": [
+        {
+          "title": "报修服务",
+          "asset": "work-报修服务"
+        },
+        {
+          "title": "迎新系统",
+          "asset": "work-迎新系统"
+        },
+        {
+          "title": "迎新AI助理",
+          "asset": "work-迎新AI助理"
+        },
+        {
+          "title": "网络党校",
+          "asset": "work-网络党校"
+        },
+        {
+          "title": "人脸数据采集",
+          "asset": "work-人脸数据采集"
+        },
+        {
+          "title": "一网通办",
+          "asset": "work-一网通办"
+        },
+        {
+          "title": "日程",
+          "asset": "work-日程"
+        },
+        {
+          "title": "课程建群",
+          "asset": "work-课程建群"
+        },
+        {
+          "title": "IT服务",
+          "asset": "work-IT服务"
+        },
+        {
+          "title": "智能填表",
+          "asset": "work-智能填表"
+        },
+        {
+          "title": "数字档案",
+          "asset": "work-数字档案"
+        },
+        {
+          "title": "学生请假",
+          "asset": "work-学生请假"
+        },
+        {
+          "title": "校史馆参观预约",
+          "asset": "work-校史馆参观预约"
+        }
+      ]
+    },
+    {
+      "title": "今日安排",
+      "items": []
+    },
+    {
+      "title": "在线审批",
+      "items": [
+        {
+          "title": "审批",
+          "asset": "work-审批"
+        }
+      ]
+    },
+    {
+      "title": "智慧教务",
+      "items": [
+        {
+          "title": "课表查询",
+          "asset": "work-课表查询"
+        },
+        {
+          "title": "课表查询(we重邮)",
+          "asset": "work-课表查询(we重邮)"
+        },
+        {
+          "title": "考试与监考",
+          "asset": "work-考试与监考"
+        },
+        {
+          "title": "空教室查询",
+          "asset": "work-空教室查询"
+        },
+        {
+          "title": "校历查询",
+          "asset": "work-校历查询"
+        },
+        {
+          "title": "校历查询(we重邮)",
+          "asset": "work-校历查询(we重邮)"
+        },
+        {
+          "title": "学术讲座查询",
+          "asset": "work-学术讲座查询"
+        },
+        {
+          "title": "图书查询",
+          "asset": "work-图书查询"
+        },
+        {
+          "title": "借阅信息",
+          "asset": "work-借阅信息"
+        },
+        {
+          "title": "学生查成绩学工平台",
+          "asset": "work-学生查成绩学工平台"
+        },
+        {
+          "title": "通信学院智慧实验室",
+          "asset": "work-通信学院智慧实验室"
+        },
+        {
+          "title": "学评教",
+          "asset": "work-学评教"
+        }
+      ]
+    },
+    {
+      "title": "公共服务",
+      "items": [
+        {
+          "title": "大型活动管理平台",
+          "asset": "work-大型活动管理平台"
+        },
+        {
+          "title": "校园资讯",
+          "asset": "work-校园资讯"
+        },
+        {
+          "title": "智慧学工",
+          "asset": "work-智慧学工"
+        },
+        {
+          "title": "智慧体育",
+          "asset": "work-智慧体育"
+        },
+        {
+          "title": "We重邮",
+          "asset": "work-We重邮"
+        },
+        {
+          "title": "心理服务",
+          "asset": "work-心理服务"
+        },
+        {
+          "title": "学生公寓管理",
+          "asset": "work-学生公寓管理"
+        },
+        {
+          "title": "集中收费",
+          "asset": "work-集中收费"
+        },
+        {
+          "title": "校园导航",
+          "asset": "work-校园导航"
+        },
+        {
+          "title": "VR校史馆",
+          "asset": "work-VR校史馆"
+        },
+        {
+          "title": "电子成绩单证明",
+          "asset": "work-电子成绩单证明"
+        },
+        {
+          "title": "AI科研导航",
+          "asset": "work-AI科研导航"
+        },
+        {
+          "title": "公寓公共空间预约",
+          "asset": "work-公寓公共空间预约"
+        },
+        {
+          "title": "书馆座位预约",
+          "asset": "work-书馆座位预约"
+        }
+      ]
+    },
+    {
+      "title": "信息化服务",
+      "items": [
+        {
+          "title": "办公电话",
+          "asset": "work-办公电话"
+        },
+        {
+          "title": "图书馆通知",
+          "asset": "work-图书馆通知"
+        },
+        {
+          "title": "数字签章验证",
+          "asset": "work-数字签章验证"
+        },
+        {
+          "title": "学生摩托车、电动自行车…",
+          "asset": "work-学生摩托车、电动自行车…"
+        }
+      ]
+    },
+    {
+      "title": "资产服务",
+      "items": [
+        {
+          "title": "大仪共享平台",
+          "asset": "work-大仪共享平台"
+        }
+      ]
+    },
+    {
+      "title": "财务处/研究中心服务",
+      "items": [
+        {
+          "title": "财务助手",
+          "asset": "work-财务助手"
+        }
+      ]
+    },
+    {
+      "title": "后勤服务",
+      "items": [
+        {
+          "title": "智慧后勤",
+          "asset": "work-智慧后勤"
+        },
+        {
+          "title": "投诉建议",
+          "asset": "work-投诉建议"
+        },
+        {
+          "title": "菜品展示",
+          "asset": "work-菜品展示"
+        },
+        {
+          "title": "教材通知",
+          "asset": "work-教材通知"
+        },
+        {
+          "title": "幼儿园入学报名",
+          "asset": "work-幼儿园入学报名"
+        },
+        {
+          "title": "学报后勤服务满意度测评",
+          "asset": "work-学报后勤服务满意度测评"
+        },
+        {
+          "title": "学生宿舍水电费查询",
+          "asset": "work-学生宿舍水电费查询"
+        }
+      ]
+    },
+    {
+      "title": "图书馆",
+      "items": [
+        {
+          "title": "图书馆外网访问资源",
+          "asset": "work-图书馆外网访问资源"
+        },
+        {
+          "title": "图书馆门户网站",
+          "asset": "work-图书馆门户网站"
+        },
+        {
+          "title": "图书馆AI馆员",
+          "asset": "work-图书馆AI馆员"
+        }
+      ]
+    },
+    {
+      "title": "协作服务",
+      "items": [
+        {
+          "title": "收集表",
+          "asset": "work-收集表"
+        },
+        {
+          "title": "微盘",
+          "asset": "work-微盘"
+        },
+        {
+          "title": "会议",
+          "asset": "work-会议"
+        },
+        {
+          "title": "会议室",
+          "asset": "work-会议室"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "items": [
+        {
+          "title": "我的待办",
+          "asset": "work-我的待办"
+        }
+      ]
+    },
+    {
+      "title": "智能办公 AI✦",
+      "items": [
+        {
+          "title": "智能文档",
+          "asset": "work-智能文档"
+        },
+        {
+          "title": "智能总结",
+          "asset": "work-智能总结"
+        },
+        {
+          "title": "智能机器人",
+          "asset": "work-智能机器人"
+        },
+        {
+          "title": "智能表格",
+          "asset": "work-智能表格"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "items": [
+        {
+          "title": "课程群",
+          "asset": "work-课程群"
+        },
+        {
+          "title": "行业资讯",
+          "asset": "work-行业资讯"
+        },
+        {
+          "title": "学习园地",
+          "asset": "work-学习园地"
+        },
+        {
+          "title": "毕业生画像",
+          "asset": "work-毕业生画像"
+        },
+        {
+          "title": "毕业生离校系统",
+          "asset": "work-毕业生离校系统"
+        },
+        {
+          "title": "日程",
+          "asset": "work-日程-2"
+        },
+        {
+          "title": "通讯录成员填报",
+          "asset": "work-通讯录成员填报"
+        },
+        {
+          "title": "我这一学年",
+          "asset": "work-我这一学年"
+        }
+      ]
+    },
+    {
+      "title": "用过的小程序",
+      "items": [
+        {
+          "title": "网天智慧运动",
+          "asset": "work-网天智慧运动"
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "qr": "Assets/965fea9c05ebbd95448c.png",
+    "me-收藏": "Assets/25788aa80c9b73717da5.png",
+    "me-红包": "Assets/40733b5b8cac0373a926.png",
+    "me-通勤": "Assets/4bd6e8d7417a62e43b2e.png",
+    "me-帮助": "Assets/80d859ded3ae2675c660.png",
+    "me-设置": "Assets/ac76132f838ee38f9dee.png",
+    "msg-电子成绩单证明": "Assets/676c830c306bfdd6cec6.png",
+    "msg-一周小结": "Assets/09bddd1fba434d0314cc.png",
+    "msg-智慧学工": "Assets/1afee8b44fe38358bb17.png",
+    "msg-行业资讯": "Assets/13d08bf82ee372f5d737.png",
+    "msg-我的待办": "Assets/89a5a87b41f2f587abb7.png",
+    "msg-微盘": "Assets/8c0b6b7e47b53df9a79b.png",
+    "msg-企业微信团队": "Assets/67ae5b568f91bc8992b1.png",
+    "doc-欢迎使用企业微信文档": "Assets/9fb1e6228f8463ee4b60.png",
+    "doc-导入本地的工作文档": "Assets/216207fec1bb28942b24.png",
+    "contact-外部联系人": "Assets/cf9e1ef0ee1d05f35f62.png",
+    "contact-添加外部联系人": "Assets/9c9949c0ed25bb15b0d0.png",
+    "contact-智能机器人": "Assets/d55bed416e2d214c7b0f.png",
+    "contact-本科生": "Assets/7bbae352181b0a02f915.png",
+    "nav-docs-off": "Assets/05ca9c0a47ff9e881709.png",
+    "nav-docs-on": "Assets/97a27dff9e0f41669282.png",
+    "nav-contacts-off": "Assets/e5639874eac8feac294f.png",
+    "nav-contacts-on": "Assets/cd327d56a583329b9f02.png",
+    "nav-me-off": "Assets/1c348a3a387061310d2e.png",
+    "nav-me-on": "Assets/5ece03486fa0c8f61927.png",
+    "nav-work-off": "Assets/ef5eaa3203931c199f5b.png",
+    "nav-work-on": "Assets/ced4021b53b6210cd056.png",
+    "nav-messages-off": "Assets/a1a7b3544c32f44652fd.png",
+    "nav-messages-on": "Assets/5f09d7d1fb8dad8eb103.png",
+    "work-学生查成绩学工版": "Assets/4283da9fd2d3950e9296.png",
+    "work-报修服务": "Assets/3c8dd4f4a67041fa0968.png",
+    "work-迎新系统": "Assets/f20ec0db17c13570d3ee.png",
+    "work-迎新AI助理": "Assets/03897e25749ef5145aba.png",
+    "work-网络党校": "Assets/0036ca0a8529c3e9e0cc.png",
+    "work-人脸数据采集": "Assets/1f8b005f3a3f63d59130.png",
+    "work-一网通办": "Assets/a21efe884f7829dc2b14.png",
+    "work-课程建群": "Assets/74938c0e640de3e34b15.png",
+    "work-IT服务": "Assets/22bc5414dcef2b521aa6.png",
+    "work-智能填表": "Assets/dbbcec776e0318fdf20d.png",
+    "work-数字档案": "Assets/7fd77f2663db0d4e18b4.png",
+    "work-学生请假": "Assets/d7000eff7b1bf0af740a.png",
+    "work-校史馆参观预约": "Assets/cfb4977fa39d66cdf45e.png",
+    "work-审批": "Assets/3d5f29a4d7a921ca5b0b.png",
+    "work-课表查询": "Assets/b42af8fd7965b0260a49.png",
+    "work-课表查询(we重邮)": "Assets/6d8c780c49d945205196.png",
+    "work-考试与监考": "Assets/d9e7f73e528a143c5fc0.png",
+    "work-空教室查询": "Assets/a606e4dc651a71bf6615.png",
+    "work-校历查询": "Assets/82b91b8fb1844e9bf437.png",
+    "work-校历查询(we重邮)": "Assets/41fc7a0ad0b72358f3fc.png",
+    "work-学术讲座查询": "Assets/731a3a88102b48a358ca.png",
+    "work-图书查询": "Assets/4f537d0a7932f4f6249e.png",
+    "work-借阅信息": "Assets/3b6d4164cc032201306d.png",
+    "work-学生查成绩学工平台": "Assets/417f4d3ddfb24b0c803e.png",
+    "work-通信学院智慧实验室": "Assets/f49ee233822092e76764.png",
+    "work-学评教": "Assets/f474bfb77bd94d9b699d.png",
+    "work-大型活动管理平台": "Assets/e00e845dc13b5411b462.png",
+    "work-校园资讯": "Assets/d72aa75eb08a136896fd.png",
+    "work-智慧学工": "Assets/6398e42766819ea9b463.png",
+    "work-智慧体育": "Assets/7e241d121819815e04e1.png",
+    "work-We重邮": "Assets/3697968d5335a1a0b432.png",
+    "work-心理服务": "Assets/5ca05d07651047fc35b2.png",
+    "work-学生公寓管理": "Assets/e454e48ac51143b7290c.png",
+    "work-集中收费": "Assets/fa2ffc89a79f5233e9c2.png",
+    "work-校园导航": "Assets/1527a5565e239cb302eb.png",
+    "work-VR校史馆": "Assets/f73977b247b9b2353986.png",
+    "work-电子成绩单证明": "Assets/740894d2903054b970a9.png",
+    "work-AI科研导航": "Assets/3d029924dcba8cbc6d12.png",
+    "work-公寓公共空间预约": "Assets/f6790222156cb0a79a01.png",
+    "work-书馆座位预约": "Assets/d6c20fef590e9e495c18.png",
+    "work-办公电话": "Assets/f63edf4dba112b81b16d.png",
+    "work-图书馆通知": "Assets/7afa6c34313d30104e70.png",
+    "work-数字签章验证": "Assets/cba71a162821178718d4.png",
+    "work-学生摩托车、电动自行车…": "Assets/3b13540a9fb25c52d699.png",
+    "work-大仪共享平台": "Assets/517a447c0d0e3f4141c8.png",
+    "work-财务助手": "Assets/d3c0454b20522570f55b.png",
+    "work-智慧后勤": "Assets/1e7603bad8b0db59e190.png",
+    "work-投诉建议": "Assets/119e36ffb54e44df0b90.png",
+    "work-菜品展示": "Assets/c58706204a9eb11e24bb.png",
+    "work-教材通知": "Assets/bb21079936709a3dd42f.png",
+    "work-幼儿园入学报名": "Assets/19bd919c5609d2b9a240.png",
+    "work-学报后勤服务满意度测评": "Assets/deb8ee30dc5fc006c529.png",
+    "work-学生宿舍水电费查询": "Assets/b68b3c883aeea127e2cd.png",
+    "work-图书馆外网访问资源": "Assets/7251c1006a8eee88b080.png",
+    "work-图书馆门户网站": "Assets/e13db187979d377c670a.png",
+    "work-图书馆AI馆员": "Assets/645311dbaf5fa8defc1d.png",
+    "work-收集表": "Assets/23bd09a7b0549ac504d5.png",
+    "work-微盘": "Assets/45a701080b7a06f34eb7.png",
+    "work-会议": "Assets/7f2b736c48f151230bf4.png",
+    "work-会议室": "Assets/7b9b7166b44a8b6e81d2.png",
+    "work-我的待办": "Assets/cd5c75213610a19942f3.png",
+    "work-智能文档": "Assets/2ebc8cd995b49537609f.png",
+    "work-智能总结": "Assets/da3b878e497e53277e65.png",
+    "work-智能机器人": "Assets/cc19e8768ad87269f054.png",
+    "work-智能表格": "Assets/aadd86ab4ef05fb46e92.png",
+    "work-课程群": "Assets/82d556ddedf8c7dd9d60.png",
+    "work-行业资讯": "Assets/e2bab38ba41d3abf181a.png",
+    "work-学习园地": "Assets/dc1c08c0ddaf3b5653c0.png",
+    "work-毕业生画像": "Assets/0e770a32a3808c00473a.png",
+    "work-毕业生离校系统": "Assets/1cc66d8488843bca6632.png",
+    "work-日程-2": "Assets/7779297cc20c51d76c72.png",
+    "work-通讯录成员填报": "Assets/8dfd5345a10d1317118e.png",
+    "work-我这一学年": "Assets/67d59e899ee0590aa31e.png",
+    "work-网天智慧运动": "Assets/858aaa5603cc9a1e77de.png",
+    "banner": "Assets/74e35383eb4fa252af43.png",
+    "reload": "Assets/0ebb480ddbb1e0e980a2.png"
+  }
+}

@@ -1,0 +1,54 @@
+name: Build iOS unsigned IPA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v6
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+          xcodebuild -version
+      - name: Generate and validate project
+        run: |
+          python3 scripts/generate_project.py
+          python3 scripts/validate_project.py
+          plutil -lint ios/LocalDemo.xcodeproj/project.pbxproj ios/LocalDemo/Info.plist
+      - name: Test iPhone 16 and iPhone 16 Pro Max
+        run: bash scripts/test_ios.sh
+      - name: Build unsigned device IPA
+        run: bash scripts/build_ipa.sh
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v6
+        with:
+          name: LocalDemo-iOS18-unsigned
+          path: |
+            dist/LocalDemo-unsigned.ipa
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload test results and build logs
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: iOS-test-results
+          path: |
+            build/*.log
+            build/*.xcresult
+            build/screenshots/
+          if-no-files-found: warn
+          retention-days: 14

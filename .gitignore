@@ -1,0 +1,13 @@
+*.apk
+*.apk.*
+*.ipa
+analysis/
+scripts/extract_apk.py
+build/
+dist/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+__pycache__/
+.DS_Store
+.publish/
