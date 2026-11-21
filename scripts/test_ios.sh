@@ -26,12 +26,14 @@ while IFS= read -r device; do
     CODE_SIGNING_ALLOWED=YES CODE_SIGNING_REQUIRED=YES CODE_SIGN_IDENTITY=- \
     | tee "build/simulator-build-$index.log"
   plutil -p build/simulator/Build/Products/Debug-iphonesimulator/LocalDemo.app/Info.plist
+  test_status=0
   xcodebuild test-without-building -project ios/LocalDemo.xcodeproj -scheme LocalDemo \
     -configuration Debug -destination "platform=iOS Simulator,id=$device" \
     -derivedDataPath build/simulator -resultBundlePath "build/iPhone16-$index.xcresult" \
     -parallel-testing-enabled NO ONLY_ACTIVE_ARCH=YES \
     CODE_SIGNING_ALLOWED=YES CODE_SIGNING_REQUIRED=YES CODE_SIGN_IDENTITY=- \
-    | tee "build/simulator-$index.log"
+    | tee "build/simulator-$index.log" || test_status=$?
   xcrun xcresulttool export attachments --path "build/iPhone16-$index.xcresult" \
     --output-path "build/screenshots/iPhone16-$index"
+  if [ "$test_status" -ne 0 ]; then exit "$test_status"; fi
 done < build/test-devices.txt

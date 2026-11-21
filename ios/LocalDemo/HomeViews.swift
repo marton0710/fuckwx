@@ -19,6 +19,7 @@ struct MeView: View {
                                 }
                                 Text(store.value("name")).font(.system(size: 23, weight: .semibold))
                             }.padding(17).padding(.top, 4).frame(maxWidth: .infinity, alignment: .leading)
+                                .contentShape(Rectangle())
                         }.buttonStyle(.plain).accessibilityIdentifier("openProfile")
                         Divider().padding(.horizontal, 17)
                         NavigationLink(value: DemoRoute.profile) {
@@ -27,7 +28,7 @@ struct MeView: View {
                                 Spacer()
                                 AssetIcon(key: "qr", symbol: "qrcode", size: 20)
                                 Image(systemName: "chevron.right").font(.caption)
-                            }.foregroundStyle(.secondary).padding(17)
+                            }.foregroundStyle(.secondary).padding(17).contentShape(Rectangle())
                         }.buttonStyle(.plain)
                     }.background(.white, in: RoundedRectangle(cornerRadius: 11))
                     menuGroup([("收藏", "shippingbox", Color.orange), ("红包", "envelope", .red), ("通勤", "location", .orange)])
@@ -127,6 +128,7 @@ struct QuickLinks: View {
                         Image(systemName: item.2)
                         Text(item.0).lineLimit(1).minimumScaleFactor(0.7)
                     }.font(.system(size: 14)).foregroundStyle(.secondary).frame(maxWidth: .infinity).frame(height: 52)
+                        .contentShape(Rectangle())
                 }.buttonStyle(.plain)
             }
         }.padding(.horizontal, 15).overlay(alignment: .bottom) { Divider().padding(.horizontal, 15) }

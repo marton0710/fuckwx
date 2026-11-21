@@ -21,8 +21,11 @@ final class LocalDemoUITests: XCTestCase {
 
     private func replace(_ field: XCUIElement, with text: String) {
         field.tap()
+        // Place the insertion point after the final line, not at the center of its text.
+        field.coordinate(withNormalizedOffset: CGVector(dx: 0.95, dy: 0.90)).tap()
         let old = field.value as? String ?? ""
         field.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: old.count) + text)
+        if !text.isEmpty { XCTAssertEqual(field.value as? String, text) }
     }
 
     func testTabLayoutsAndWorkRetry() {
@@ -43,6 +46,7 @@ final class LocalDemoUITests: XCTestCase {
 
     func testProfilePersistsAcrossLaunches() {
         app.buttons["openProfile"].tap()
+        XCTAssertTrue(app.buttons["profile.name"].waitForExistence(timeout: 5))
         app.buttons["profile.name"].tap()
         replace(app.textFields["editor.value"], with: "Tester16")
         app.buttons["editor.save"].tap()
@@ -68,6 +72,7 @@ final class LocalDemoUITests: XCTestCase {
         app.buttons["settings.save"].tap()
         app.buttons["tab.messages"].tap()
         XCTAssertTrue(app.staticTexts["Alpha"].waitForExistence(timeout: 3))
+        app.swipeUp()
         XCTAssertTrue(app.staticTexts["Beta"].exists)
     }
 
@@ -88,6 +93,7 @@ final class LocalDemoUITests: XCTestCase {
     private func openFirstMember() {
         XCTAssertTrue(app.buttons["openProfile"].waitForExistence(timeout: 10))
         app.buttons["openProfile"].tap()
+        XCTAssertTrue(app.buttons["profile.name"].waitForExistence(timeout: 5))
         let department = app.buttons["profile.department"]
         for _ in 0..<3 where !department.isHittable { app.swipeUp() }
         department.tap()
