@@ -35,6 +35,7 @@ while IFS= read -r device; do
     | tee "build/simulator-$index.log" || test_status=$?
   xcrun xcresulttool export attachments --path "build/iPhone16-$index.xcresult" \
     --output-path "build/screenshots/iPhone16-$index"
-  xcrun simctl shutdown "$device"
+  # Xcode may already have shut down the device; cleanup must not fail passing tests.
+  xcrun simctl shutdown "$device" || echo "Simulator cleanup skipped; continuing with test result."
   if [ "$test_status" -ne 0 ]; then exit "$test_status"; fi
 done < build/test-devices.txt
